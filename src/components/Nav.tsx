@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
+import logo from "../assets/qr-logo-icon.svg";
+
 
 export default function Nav() {
   // ✅ Set initial state immediately instead of using useEffect for it
@@ -28,7 +30,7 @@ export default function Nav() {
     <nav className="bg-white dark:bg-gray-900 shadow-md p-4 md:py-4 md:px-8 fixed top-0 w-full z-10">
       <div className="flex items-center justify-between">
         <div className="flex gap-2 items-center">
-          <img src="/qr-logo-icon.svg" alt="QR-GEN Logo" className="h-8 w-8" />
+          <img src={logo} alt="QR-GEN Logo" className="h-8 w-8" />
           <div className="text-2xl font-bold text-gray-800 dark:text-white leading-normal">
             QR-GEN
           </div>
