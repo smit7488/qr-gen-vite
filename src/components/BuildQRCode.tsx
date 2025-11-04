@@ -38,7 +38,7 @@ export default function BuildQRCode({
         // ✅ Extract the `viewBox` and calculate scaling factor
         const viewBoxMatch = svgContent.match(/viewBox=["']([\d.\s]+)["']/);
         if (viewBoxMatch) {
-          const [minX, minY, width, height] = viewBoxMatch[1]
+          const [width, height] = viewBoxMatch[1]
             .split(" ")
             .map(Number);
 
