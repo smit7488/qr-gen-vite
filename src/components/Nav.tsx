@@ -34,7 +34,7 @@ export default function Nav() {
           </div>
         </div>
         <div className="hidden md:block text-md font-regular text-gray-600 dark:text-white leading-normal">
-          A free QR Code Generator built with React and Next.js.
+          A free QR Code Generator built with React and Vite.
         </div>
 
         {/* Dark Mode Toggle */}
